@@ -5,7 +5,7 @@ import json
 
 
 def update_home_tab(client: WebClient, event):
-    with open("./src/views/app_home.json") as f:
+    with open("./src/stage_2/views/app_home.json") as f:
         app_home_view = json.load(f)
 
     # Publish the app home view

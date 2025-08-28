@@ -4,9 +4,9 @@ from slack_sdk.web.client import WebClient
 import json
 
 
-def open_stage_2_create_task_view(ack, body, client: WebClient):
+def open_create_task_view(ack, body, client: WebClient):
     ack()
-    with open("./src/views/stage_2_create_task.json") as f:
+    with open("./src/stage_2/views/create_task.json") as f:
         create_task_view = json.load(f)
 
     # Publish the app home view
