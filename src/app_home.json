@@ -1,0 +1,37 @@
+{
+    "type": "home",
+    "blocks": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "Choose which stage's home to view/try"
+            }
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Stage 2",
+                        "emoji": true
+                    },
+                    "value": "open_stage_2_home",
+                    "action_id": "open_stage_2_home"
+                },
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Stage 3",
+                        "emoji": true
+                    },
+                    "value": "open_stage_3_home",
+                    "action_id": "open_stage_3_home"
+                }
+            ]
+        }
+    ]
+}

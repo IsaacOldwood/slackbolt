@@ -2,7 +2,7 @@ import logging
 from decouple import config
 from slack_bolt import App
 from stage_2.events import handle_reaction_added_events
-from stage_2.app_home import update_home_tab
+from app_home import initial_home_open, stage_2_home_open, stage_3_home_open
 from stage_2.actions import open_create_task_view
 from stage_2.views import handle_submission
 
@@ -13,7 +13,9 @@ app = App(
 )
 
 app.event("reaction_added")(handle_reaction_added_events)
-app.event("app_home_opened")(update_home_tab)
+app.event("app_home_opened")(initial_home_open)
+app.action("open_stage_2_home")(stage_2_home_open)
+app.action("open_stage_3_home")(stage_3_home_open)
 app.action("open_create_task_view")(open_create_task_view)
 app.view("stage_2_create_task")(handle_submission)
 
