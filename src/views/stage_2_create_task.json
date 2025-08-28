@@ -1,0 +1,48 @@
+{
+    "type": "modal",
+    "callback_id": "stage_2_create_task",
+    "submit": {
+        "type": "plain_text",
+        "text": "Submit",
+        "emoji": true
+    },
+    "close": {
+        "type": "plain_text",
+        "text": "Cancel",
+        "emoji": true
+    },
+    "title": {
+        "type": "plain_text",
+        "text": "Tech Support Task",
+        "emoji": true
+    },
+    "blocks": [
+        {
+            "type": "input",
+            "block_id": "task_title",
+            "label": {
+                "type": "plain_text",
+                "text": "Support Task Title",
+                "emoji": true
+            },
+            "element": {
+                "type": "plain_text_input",
+                "action_id": "task_title_text"
+            }
+        },
+        {
+            "type": "input",
+            "block_id": "task_desc",
+            "label": {
+                "type": "plain_text",
+                "text": "Describe the support required",
+                "emoji": true
+            },
+            "element": {
+                "type": "plain_text_input",
+                "multiline": true,
+                "action_id": "task_desc_text"
+            }
+        }
+    ]
+}

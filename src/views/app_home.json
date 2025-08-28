@@ -2,18 +2,27 @@
     "type": "home",
     "blocks": [
         {
-            "type": "section",
+            "type": "header",
             "text": {
-                "type": "mrkdwn",
-                "text": "*Welcome home"
+                "type": "plain_text",
+                "text": "Tech Support"
             }
         },
         {
-            "type": "section",
-            "text": {
-                "type": "mrkdwn",
-                "text": "Learn how home tabs can be more useful and interactive </surfaces/app-home|*in the documentation*>."
-            }
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Create New Task",
+                        "emoji": true
+                    },
+                    "style": "primary",
+                    "value": "open_create_task_view",
+                    "action_id": "open_create_task_view"
+                }
+            ]
         }
     ]
 }
