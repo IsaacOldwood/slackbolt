@@ -1,0 +1,19 @@
+{
+    "type": "home",
+    "blocks": [
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "*Welcome home"
+            }
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "Learn how home tabs can be more useful and interactive </surfaces/app-home|*in the documentation*>."
+            }
+        }
+    ]
+}
