@@ -1,0 +1,39 @@
+{
+    "callback_id": "stage_3_refresh_tables",
+    "title": {
+        "type": "plain_text",
+        "text": "Refresh dashboard",
+        "emoji": true
+    },
+    "submit": {
+        "type": "plain_text",
+        "text": "Submit",
+        "emoji": true
+    },
+    "type": "modal",
+    "close": {
+        "type": "plain_text",
+        "text": "Cancel",
+        "emoji": true
+    },
+    "blocks": [
+        {
+            "type": "input",
+            "block_id": "refresh_tables_select",
+            "label": {
+                "type": "plain_text",
+                "text": "Select a client to refresh their data in the internal dashboard",
+                "emoji": true
+            },
+            "element": {
+                "action_id": "refresh_tables_select",
+                "type": "external_select",
+                "placeholder": {
+                    "type": "plain_text",
+                    "text": "Select a client"
+                },
+                "min_query_length": 3
+            }
+        }
+    ]
+}

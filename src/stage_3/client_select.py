@@ -7,6 +7,8 @@ from database import Database
 def register_handlers(app: App):
     app.options("client_select")(show_options)
     app.action("client_select")(handle_client_select)
+    app.options("refresh_tables_select")(show_options)
+    app.action("refresh_tables_select")(handle_client_select)
 
 
 def generate_client_options(
