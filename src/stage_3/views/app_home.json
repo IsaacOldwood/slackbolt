@@ -1,0 +1,79 @@
+{
+    "type": "home",
+    "blocks": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "Tech Support"
+            }
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Change dashboard client",
+                        "emoji": true
+                    },
+                    "value": "change_client",
+                    "action_id": "change_client"
+                },
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Refresh tables",
+                        "emoji": true
+                    },
+                    "value": "refresh_tables",
+                    "action_id": "refresh_tables"
+                },
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Access client",
+                        "emoji": true
+                    },
+                    "value": "access_client",
+                    "action_id": "access_client"
+                },
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Promote data",
+                        "emoji": true
+                    },
+                    "value": "promote_data",
+                    "action_id": "promote_data"
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "plain_text",
+                "text": "Can't find what you're looking for?"
+            }
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Create New Task",
+                        "emoji": true
+                    },
+                    "value": "open_create_task_view",
+                    "action_id": "open_create_task_view"
+                }
+            ]
+        }
+    ]
+}

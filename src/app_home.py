@@ -33,10 +33,8 @@ def stage_2_home_open(ack, client: WebClient, body):
 def stage_3_home_open(ack, client: WebClient, body):
     ack()
 
-    with open("./src/app_home.json") as f:
+    with open("./src/stage_3/views/app_home.json") as f:
         app_home_view = json.load(f)
-
-    app_home_view["blocks"][0]["text"]["text"] = "Stage 3 home in progress"
 
     # Publish the app home view
     client.views_publish(
