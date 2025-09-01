@@ -1,0 +1,39 @@
+{
+    "callback_id": "stage_3_change_client",
+    "title": {
+        "type": "plain_text",
+        "text": "Change dashboard client",
+        "emoji": true
+    },
+    "submit": {
+        "type": "plain_text",
+        "text": "Submit",
+        "emoji": true
+    },
+    "type": "modal",
+    "close": {
+        "type": "plain_text",
+        "text": "Cancel",
+        "emoji": true
+    },
+    "blocks": [
+        {
+            "type": "input",
+            "block_id": "client_select",
+            "label": {
+                "type": "plain_text",
+                "text": "Select a client to view their data in the internal dashboard",
+                "emoji": true
+            },
+            "element": {
+                "action_id": "client_select",
+                "type": "external_select",
+                "placeholder": {
+                    "type": "plain_text",
+                    "text": "Select a client"
+                },
+                "min_query_length": 3
+            }
+        }
+    ]
+}
