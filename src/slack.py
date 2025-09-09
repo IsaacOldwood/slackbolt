@@ -9,6 +9,7 @@ from stage_3.client_select import register_handlers as register_client_select
 from stage_3.project_select import register_handlers as register_project_select
 from stage_3.refresh_tables import register_handlers as register_refresh_tables
 from stage_3.promote_data import register_handlers as register_promote_data
+from stage_3.access_client import register_handlers as register_access_client
 from stage_2.views import handle_submission
 
 logging.basicConfig(level=logging.DEBUG)
@@ -30,6 +31,7 @@ register_client_select(app)
 register_refresh_tables(app)
 register_project_select(app)
 register_promote_data(app)
+register_access_client(app)
 
 if __name__ == "__main__":
     app.start(3000)  # POST http://localhost:3000/slack/events

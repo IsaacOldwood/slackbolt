@@ -11,6 +11,8 @@ def register_handlers(app: App):
     app.action("refresh_tables_select")(handle_client_select)
     app.options("promote_data_select")(show_options)
     app.action("promote_data_select")(handle_client_select)
+    app.options("access_client_select")(show_options)
+    app.action("access_client_select")(handle_client_select)
 
 
 def generate_client_options(
