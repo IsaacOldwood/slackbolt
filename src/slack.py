@@ -6,7 +6,9 @@ from app_home import initial_home_open, stage_2_home_open, stage_3_home_open
 from stage_2.actions import open_create_task_view
 from stage_3.change_client import register_handlers as register_change_client
 from stage_3.client_select import register_handlers as register_client_select
+from stage_3.project_select import register_handlers as register_project_select
 from stage_3.refresh_tables import register_handlers as register_refresh_tables
+from stage_3.promote_data import register_handlers as register_promote_data
 from stage_2.views import handle_submission
 
 logging.basicConfig(level=logging.DEBUG)
@@ -26,6 +28,8 @@ app.view("stage_2_create_task")(handle_submission)
 register_change_client(app)
 register_client_select(app)
 register_refresh_tables(app)
+register_project_select(app)
+register_promote_data(app)
 
 if __name__ == "__main__":
     app.start(3000)  # POST http://localhost:3000/slack/events

@@ -1,0 +1,57 @@
+{
+    "callback_id": "stage_3_promote_data",
+    "title": {
+        "type": "plain_text",
+        "text": "Promote data",
+        "emoji": true
+    },
+    "submit": {
+        "type": "plain_text",
+        "text": "Submit",
+        "emoji": true
+    },
+    "type": "modal",
+    "close": {
+        "type": "plain_text",
+        "text": "Cancel",
+        "emoji": true
+    },
+    "blocks": [
+        {
+            "type": "input",
+            "block_id": "promote_data_select",
+            "label": {
+                "type": "plain_text",
+                "text": "Select a client and project to submit a request to promote the data to prod",
+                "emoji": true
+            },
+            "element": {
+                "action_id": "promote_data_select",
+                "type": "external_select",
+                "placeholder": {
+                    "type": "plain_text",
+                    "text": "Select a client"
+                },
+                "min_query_length": 3
+            }
+        },
+        {
+            "type": "input",
+            "block_id": "promote_data_project_select",
+            "label": {
+                "type": "plain_text",
+                "text": "Select a project from the client",
+                "emoji": true
+            },
+            "element": {
+                "action_id": "promote_data_project_select",
+                "type": "external_select",
+                "placeholder": {
+                    "type": "plain_text",
+                    "text": "Select a project"
+                },
+                "min_query_length": 3
+            }
+        }
+    ]
+}
