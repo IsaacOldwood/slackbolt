@@ -1,7 +1,7 @@
 import logging
 from decouple import config
 from slack_bolt import App
-from stage_2.events import handle_reaction_added_events
+from stage_1.events import handle_reaction_added_events
 from app_home import initial_home_open, stage_2_home_open, stage_3_home_open
 from stage_2.actions import open_create_task_view
 from stage_3.change_client import register_handlers as register_change_client
