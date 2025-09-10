@@ -59,7 +59,7 @@ def handle_submission(ack, logger, body, view, client: WebClient):
         project_name,
     )
 
-    # ToDo: Generate SQL and post to channel
+    # Generate SQL and post to channel
     sql = generate_promote_sql(client_name, project_name)
 
     client.chat_postMessage(

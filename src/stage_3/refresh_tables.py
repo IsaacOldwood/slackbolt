@@ -29,6 +29,7 @@ def handle_submission(ack, logger, body, view, client: WebClient):
     ack()
     db = Database()
 
+    # Get values from form
     view_values = view["state"]["values"]
     client_name = view_values["refresh_tables_select"]["refresh_tables_select"][
         "selected_option"
@@ -37,8 +38,10 @@ def handle_submission(ack, logger, body, view, client: WebClient):
 
     logger.info("User: %s refreshed client %s data", user_id, client_name)
 
+    # Run refresh tables stored procedure
     db.refresh_client_data(client_name)
 
+    # Notify user
     client.chat_postMessage(
         channel=user_id,
         text=f"Refreshed {client_name} data. The internal dashboard will now be up to date",
