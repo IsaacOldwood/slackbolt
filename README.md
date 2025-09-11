@@ -21,6 +21,7 @@ CLICKUP_SUPPORT_LIST_ID="####################"
 
 SLACK_BOT_TOKEN="#####################"
 SLACK_SIGNING_SECRET="################"
+SLACK_REQUESTS_CHANNEL_ID="########"
 ```
 
 ## Testing
