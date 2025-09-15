@@ -13,6 +13,12 @@ Code for SlackBolt talk at PyCon UK 2025
 uv run ./src/slack.py
 ```
 
+Using the built-in `HTTPServer` adapter is fine for local development but not for running in Production. We use FastAPI and uvicorn for that.
+
+```shell
+uv run uvicorn app:api --reload --port 3000 --log-level warning
+```
+
 ## Environment variables
 
 ```text
