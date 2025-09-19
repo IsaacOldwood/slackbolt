@@ -1,6 +1,12 @@
 # slackbolt
 Code for SlackBolt talk at PyCon UK 2025
 
+## PyCon UK 2025 Talk
+
+Slides are available here: [slides](Slides_SlackBolt_PyCon_UK_2025.pdf)
+
+The recording is available on the PyCon UK 2025 youtube.
+
 ## First time setup
 
 1. Install `uv`
